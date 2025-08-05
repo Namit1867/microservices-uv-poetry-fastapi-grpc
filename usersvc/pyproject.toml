@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "usersvc"
+version = "0.1.0"
+description = "User gRPC microservice"
+authors = ["Namit Jain <namit.cs.rdjps@gmail.com>"]
+packages = [{ include = "usersvc", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+grpcio = "^1.66"
+grpcio-tools = "^1.66"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gateway"
+version = "0.1.0"
+description = "REST API gateway aggregating User and Order services"
+authors = ["You <you@example.com>"]
+packages = [{ include = "gateway", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.112"
+uvicorn = {extras = ["standard"], version = "^0.30"}
+grpcio = "^1.66"
+grpcio-tools = "^1.66"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

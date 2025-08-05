@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  usersvc:
+    build: ./usersvc
+    image: demo/usersvc
+    container_name: usersvc
+    ports: ["50051:50051"]
+
+  ordersvc:
+    build: ./ordersvc
+    image: demo/ordersvc
+    container_name: ordersvc
+    ports: ["50052:50052"]
+
+  gateway:
+    build: ./gateway
+    image: demo/gateway
+    container_name: gateway
+    depends_on:
+      - usersvc
+      - ordersvc
+    ports: ["8080:8080"]

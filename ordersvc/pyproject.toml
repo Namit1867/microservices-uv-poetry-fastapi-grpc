@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "ordersvc"
+version = "0.1.0"
+description = "Order gRPC microservice"
+authors = ["You <you@example.com>"]
+packages = [{ include = "ordersvc", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+grpcio = "^1.66"
+grpcio-tools = "^1.66"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
