@@ -1,3 +1,9 @@
+test
+
+test
+
+test
+
 # 🧩 Microservices Architecture with FastAPI + gRPC + Poetry + Dockers
 
 This project demonstrates a minimal **microservices architecture** using:
