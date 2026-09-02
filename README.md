@@ -1,4 +1,4 @@
-# 🧩 Microservices Architecture with FastAPI + gRPC + Poetry + Dockers
+# 🧩 Microservices Architecture with FastAPI + gRPC + Poetry + Dockers 
 
 This project demonstrates a minimal **microservices architecture** using:
 
